@@ -1,0 +1,131 @@
+.Erro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    height: 100vh;
+    background-color: #FFB099;
+
+    .blocos {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+
+        h1 {
+            font-family: Krona One;
+            color: #fff;
+            font-size: 10rem;
+        }
+
+        h2 {
+            font-family: Krona One;
+            font-weight: 500;
+            color: #fff;
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-family: Krona One;
+            font-weight: 400;
+            color: #000000;
+            font-size: 2rem;
+        }
+
+        a {
+            font-family: Krona One;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #fff;
+            padding: 1vh 3vw;
+            background-color: #F0C1B3;
+            border-radius: 10px;
+        }
+
+        a:hover {
+            transition: 0.2s;
+            transform: scale(1.05);
+            cursor: pointer;
+            box-shadow: 0 6px 15px rgba(126, 126, 126, 0.527);
+        }
+    }
+
+    #quadrado {
+        background-color: #fff;
+        border-radius: 15px;
+        text-align: center;
+        padding: 5vh 10vw;
+        gap: 5vh;
+    }
+}
+
+@media (max-width:1024px) {
+    .Erro {
+        .blocos {
+            h1 {
+                font-size: 8rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            a {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width:912px) {
+    .Erro {
+        flex-direction: column;
+        gap: 5vh;
+
+        .blocos {
+            h1 {
+                font-size: 15rem;
+            }
+
+            h2 {
+                font-size: 3rem;
+            }
+
+            h3 {
+                font-size: 3rem;
+            }
+
+            a {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media (max-width:549px) {
+    .Erro {
+
+
+        .blocos {
+            h1 {
+                font-size: 8rem;
+            }
+
+            h2 {
+                font-size: 1rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            a {
+                font-size: 1rem;
+            }
+        }
+    }
+}

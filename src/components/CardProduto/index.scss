@@ -1,0 +1,134 @@
+.CardProduto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5vw;
+    padding: 5vh 5vw;
+
+    .card {
+        height: 250px;
+        width: 200px;
+        border-radius: 12px;
+        border: solid 1px #000;
+        overflow: hidden;
+
+        .separacaoInfo {
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 1vh 1vw;
+            gap: 0.7vh;
+            background-color: #fff;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            p {
+                align-self: start;
+                color: #CACACA;
+                font-size: 0.7rem;
+            }
+
+            a {
+                all: unset;
+                background-color: #FFB099;
+                padding: 0.8vh 2vw;
+                border-radius: 5px;
+                color: #fff;
+                font-family: Krona One;
+                font-weight: 600;
+                font-size: 0.7rem;
+            }
+
+            a:hover {
+                box-shadow: 0px 0px 50px 0px #FFB099;
+                transition: 0.3s;
+                text-decoration: underline;
+            }
+        }
+
+        #imagem {
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width:1280px) {
+    .CardProduto {
+
+        .card {
+
+            .separacaoInfo {
+
+                a {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:912px) {
+    .CardProduto {
+
+        .card {
+            height: 275px;
+            width: 225px;
+
+            .separacaoInfo {
+                gap: 0.5vh;
+
+                a {
+                    padding: 0.6vh 3vw;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:540px) {
+    .CardProduto {
+        padding: 1vh 1vw;
+
+        .card {
+            height: 225px;
+            width: 175px;
+
+            .separacaoInfo {
+                gap: 0.8vh;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:430px) {
+    .CardProduto {
+
+        .card {
+            height: 180px;
+            width: 125px;
+
+            .separacaoInfo {
+                gap: 0.3vh;
+
+                h5 {
+                    font-size: 0.6rem;
+                }
+
+                a {
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+}

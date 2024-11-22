@@ -1,0 +1,158 @@
+.Rodape {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10vh 5vw;
+    color: #3D3D3D;
+    background-color: #FFDBD0;
+
+    .separacaoComponentesRodape {
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+        height: 100%;
+
+        img {
+            height: 15vh;
+        }
+
+        .alinhamentoImagens {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                height: 3vh;
+            }
+        }
+    }
+
+    .alinhamentoTopo {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 1280px) {
+    .Rodape {
+
+        .separacaoComponentesRodape {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .separacaoComponentesRodape {
+                display: flex;
+                flex-direction: column;
+                gap: 1vh;
+                height: 100%;
+
+                img {
+                    height: 15vh;
+                }
+
+                .alinhamentoImagens {
+                    img {
+                        height: 3vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .Rodape {
+
+        .separacaoComponentesRodape {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            a {
+                font-size: 0.8rem;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 912px) {
+    .Rodape {
+
+        .separacaoComponentesRodape {
+            img {
+                height: 10vh;
+            }
+
+            h1 {
+                font-size: 1.2rem;
+            }
+
+            a {
+                font-size: 0.7rem;
+            }
+
+        }
+    }
+}
+
+
+@media (max-width: 540px) {
+    .Rodape {
+        .separacaoComponentesRodape {
+            h1 {
+                font-size: 1rem;
+            }
+
+            a {
+                font-size: 0.5rem;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 430px) {
+    .Rodape {
+        padding: 5vh 8vw;
+
+        img {
+            height: 7vh;
+        }
+
+        .separacaoComponentesRodape {
+            gap: 0.5vh;
+
+            img {
+                height: 7vh;
+            }
+
+            h1 {
+                font-size: 0.7rem;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 390px) {
+    .Rodape {
+        padding: 5vh 5vw;
+
+        .separacaoComponentesRodape {
+
+            img {
+                height: 7vh;
+            }
+
+            h1 {
+                font-size: 0.7rem;
+            }
+        }
+
+    }
+}

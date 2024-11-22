@@ -1,0 +1,324 @@
+.Ferramentas {
+
+    .sessaoNavegacaoRapida {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10vh 0vw;
+        gap: 5vh;
+
+        .alinharNavegacao {
+
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            align-items: center;
+            gap: 5vw;
+
+            a {
+                font-family: Krona One;
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: #fff;
+                padding: 1vh 3vw;
+                background-color: #F0C1B3;
+                border-radius: 15px;
+            }
+
+            a:hover {
+                transition: 0.2s;
+                transform: scale(1.05);
+                cursor: pointer;
+                box-shadow: 0 6px 15px rgba(126, 126, 126, 0.527);
+            }
+        }
+    }
+
+    .sessaoTabela {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5vh;
+        height: 120vh;
+        padding: 4vh 0vw;
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        .tabelaScroll {
+            height: 100vh;
+            max-width: 80vw;
+            max-height: 80vh;
+            overflow: hidden;
+            overflow-y: scroll;
+            border: solid 1px #000;
+            background-color: #F0C1B3;
+
+            table {
+                height: 10vh;
+                font-family: Poppins;
+                background-color: #F0C1B3;
+                font-size: 1rem;
+                padding: 2vh 2vw;
+                width: 80vw;
+
+                th {
+                    text-align: left;
+                    padding: 5px;
+                    border: 1px solid #000;
+                }
+
+                td {
+                    padding: 5px;
+                    border: 1px solid #000;
+                }
+            }
+        }
+
+        .tabelaScroll::-webkit-scrollbar {
+            width: 10px;
+            background-color: #cbcbcb;
+        }
+
+        .tabelaScroll::-webkit-scrollbar-thumb {
+            border: solid 1px #000;
+            border-right-style: none;
+            background-color: #F0C1B3;
+        }
+
+        .informacao {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #F0C1B3;
+            width: 80vw;
+            padding: 6vh 0vw;
+            border: solid 1px #000;
+
+            h2 {
+                font-size: 1.5rem;
+                color: #000;
+            }
+        }
+
+        .inputsCheck {
+            display: flex;
+            flex-direction: row;
+            gap: 5vw;
+
+            select {
+                font-family: Krona One;
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: #fff;
+                padding: 1vh 3vw;
+                background-color: #F0C1B3;
+                border-radius: 15px;
+
+                option {
+                    font-size: 1rem;
+                    padding: 1vh 1vw;
+                    background-color: #F0C1B3;
+                }
+            }
+
+            button {
+                border: none;
+                font-family: Krona One;
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: #fff;
+                padding: 1vh 3vw;
+                background-color: #F0C1B3;
+                border-radius: 15px;
+            }
+
+            button:hover {
+                transition: 0.2s;
+                transform: scale(1.05);
+                cursor: pointer;
+                box-shadow: 0 6px 15px rgba(126, 126, 126, 0.527);
+            }
+        }
+    }
+
+    #sessao,
+    #semEstoque {
+        background-color: #FFEEE9;
+    }
+
+    #semEstoque {
+        height: 50vh;
+
+        table {
+            height: 30vh;
+        }
+    }
+}
+
+
+@media (max-width:1024px) {
+    .Ferramentas {
+        .sessaoTabela {
+            h2 {
+                font-size: 2rem;
+            }
+
+            .tabelaScroll {
+
+                table {
+
+                    th {
+                        font-size: 1rem;
+                    }
+
+                    td {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .inputsCheck {
+
+                select {
+                    font-size: 1rem;
+                }
+
+                option {
+                    font-size: 0.8rem;
+                }
+
+                button {
+                    font-size: 1rem;
+                }
+
+            }
+
+        }
+    }
+}
+
+@media (max-width:912px) {
+    .Ferramentas {
+
+        .sessaoNavegacaoRapida {
+
+            .alinharNavegacao {
+
+                a {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .sessaoTabela {
+            height: 80vh;
+
+
+            .tabelaScroll {
+                height: 70vh;
+                overflow-x: scroll;
+            }
+
+            .informacao {
+                height: 1vh;
+                padding: 5vh;
+            }
+        }
+
+        #semEstoque {
+            height: 35vh;
+
+            table {
+                height: 20vh;
+            }
+        }
+    }
+}
+
+@media (max-width:540px) {
+    .Ferramentas {
+        .sessaoNavegacaoRapida {
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        .sessaoTabela {
+
+            .informacao {
+
+                h2 {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:430px) {
+    .Ferramentas {
+        .sessaoNavegacaoRapida {
+            h1 {
+                font-size: 1.2rem;
+            }
+
+            .alinharNavegacao {
+                a {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+
+        .sessaoTabela {
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .inputsCheck {
+
+                select {
+                    font-size: 0.6rem;
+                }
+
+                option {
+                    font-size: 0.6rem;
+                }
+
+                button {
+                    font-size: 0.6rem;
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width:390px) {
+    .Ferramentas {
+        .sessaoNavegacaoRapida {
+            padding: 4vh;
+        }
+
+        .sessaoTabela {
+
+            .tabelaScroll {
+
+                table {
+
+                    th {
+                        font-size: 0.8rem;
+                    }
+
+                    td {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}

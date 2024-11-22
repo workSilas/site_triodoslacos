@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+
+.Nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #FFDBD0;
+    padding: 30px 50px;
+    position: relative;
+
+    .divisaoComponentesNav {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 1.5rem;
+
+            @media (max-width: 912px) {
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+    }
+
+
+    .links {
+        display: flex;
+        margin-top: 0px;
+        gap: 35px;
+
+        a {
+            color: #5A5A5A;
+            font-family: "ADLaM Display", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .links-mobile {
+        display: flex;
+        flex-direction: column;
+
+        a {
+            padding: 10px 15px;
+            color: #333;
+            text-decoration: none;
+            text-align: center;
+            white-space: nowrap;
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+        }
+    }
+
+    .botao-entrar {
+        background-color: #e9c3b8;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 5px 15px;
+
+        a {
+            font-size: 20px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(126, 126, 126, 0.527);
+        }
+    }
+
+    .botao-entrar-mobile {
+        background-color: #e9c3b8;
+        border-radius: 10px;
+        padding: 10px;
+
+        a {
+            font-size: 20px;
+            color: #fff;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(126, 126, 126, 0.527);
+        }
+    }
+
+    .itens {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 912px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    .logo {
+        width: 100px;
+        margin-top: -20px;
+        margin-bottom: -20px;
+
+        @media (max-width: 912px) {
+            width: 80px;
+        }
+    }
+
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        transition: box-shadow 0.3s;
+        padding: 6px;
+        background-color: rgba(255, 219, 208, 0.9);
+        border-radius: 8px;
+
+        @media (max-width: 912px) {
+            display: flex;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .bar {
+            height: 3px;
+            width: 25px;
+            background-color: #333;
+            margin: 3px 0;
+            transition: transform 0.3s, opacity 0.3s;
+
+            &.open {
+                &:nth-child(1) {
+                    transform: rotate(44deg) translate(6px, 6px);
+                }
+
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:nth-child(3) {
+                    transform: rotate(-43deg) translate(6px, -6px);
+                }
+            }
+        }
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        @media (max-width: 912px) {
+            display: none;
+        }
+    }
+
+    .menu-mobile {
+        background-color: #FFDBD0;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .Nav {
+        padding: 20px 30px;
+
+        .itens {
+            gap: 5px;
+        }
+
+        .logo {
+            width: 70px;
+        }
+
+        .menu-mobile {
+            width: auto;
+        }
+    }
+}

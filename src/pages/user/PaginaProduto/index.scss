@@ -1,0 +1,190 @@
+.PaginaProduto {
+    .informacoesDoproduto {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: start;
+        gap: 4vh;
+        padding: 5vh 5vw;
+
+        a {
+            font-family: Krona One;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #fff;
+            padding: 1vh 3vw;
+            background-color: #F0C1B3;
+            border-radius: 12px;
+        }
+
+        a:hover {
+            transition: 0.2s;
+            transform: scale(1.05);
+            cursor: pointer;
+            box-shadow: 0 6px 15px rgba(126, 126, 126, 0.527);
+        }
+
+        .alinharInfo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 2vw;
+            width: 100%;
+
+            img {
+                height: 40vh;
+                width: 50vh;
+            }
+
+            .infoDeCompra {
+                display: flex;
+                flex-direction: column;
+                height: 75%;
+                gap: 3vh;
+
+                h1 {
+                    font-size: 3rem;
+                    color: #000;
+                }
+
+                h2 {
+                    font-size: 3rem;
+                    text-decoration: underline;
+                    color: #000;
+                }
+
+                a {
+                    padding: 2vh 3vw;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    .PaginaProduto {
+        .informacoesDoproduto {
+
+
+            .alinharInfo {
+
+                .infoDeCompra {
+                    h1 {
+                        font-size: 2rem;
+                    }
+
+                    h2 {
+                        font-size: 2.4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:912px) {
+    .PaginaProduto {
+
+        .informacoesDoproduto {
+            height: 70vh;
+
+
+            a {
+                font-size: 1.2rem;
+            }
+
+            .alinharInfo {
+
+                img {
+                    height: 25vh;
+                    width: 35vh;
+                }
+
+                .infoDeCompra {
+                    h1 {
+                        font-size: 1.2rem;
+                    }
+
+                    h2 {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:540px) {
+    .PaginaProduto {
+
+        .informacoesDoproduto {
+            gap: 2vh;
+
+            .alinharInfo {
+                img {
+                    height: 15vh;
+                    width: 25vh;
+                }
+
+                .infoDeCompra {
+                    gap: 2vh;
+
+                    h1 {
+                        font-size: 0.9rem;
+                    }
+
+                    h2 {
+                        font-size: 1.5rem;
+                    }
+
+                    a {
+                        padding: 1vh 1vw;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+
+            h1 {
+                font-size: 1rem;
+            }
+
+            p {
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .PaginaProduto {
+
+        .informacoesDoproduto {
+
+            .alinharInfo {
+
+
+                .infoDeCompra {
+                    gap: 1.2vh;
+
+                    h1 {
+                        font-size: 0.7rem;
+                    }
+
+                    h2 {
+                        font-size: 1.2rem;
+                    }
+
+                    a {
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+
+            p {
+                font-size: 0.7rem;
+            }
+        }
+    }
+}

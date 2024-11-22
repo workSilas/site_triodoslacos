@@ -1,0 +1,167 @@
+.entrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+    a {
+        font-family: Krona One;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #fff;
+        padding: 2vh 3vw;
+        background-color: #F0C1B3;
+        border-radius: 12px;
+    }
+
+    a:hover {
+        transition: 0.2s;
+        transform: scale(1.05);
+        cursor: pointer;
+        box-shadow: 0 6px 15px rgba(126, 126, 126, 0.527);
+    }
+
+
+    .absolute {
+        position: absolute;
+        top: 5vh;
+        left: 5vw;
+    }
+
+
+    img {
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .inputEntrar {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+
+        label {
+            justify-content: flex-start;
+
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+
+            p {
+                color: #ff0000;
+                font-size: 0.7rem;
+            }
+        }
+
+        input {
+            border: none;
+            outline: none;
+            box-shadow: none;
+            background-color: #FFDBD0;
+            font-size: 1rem;
+            padding: 0.5vh 1vw;
+            border: solid 1px #fff;
+            border-radius: 15px;
+            padding: 1rem 2vw;
+            font-family: Krona One;
+        }
+
+        input:focus {
+            transition: all 0.5s;
+            border: solid 1px #949494;
+        }
+    }
+
+    .botaoEntrarSelect {
+        padding: 20px;
+
+        p {
+            background-color: #C1796D;
+            color: #fff;
+            padding: 10px 30px;
+
+            text-decoration: none;
+            font-family: "Krona One";
+            font-weight: 300;
+        }
+
+        p:hover {
+            transition: 0.2s;
+            background-color: #FFDBD0;
+            color: #000;
+            cursor: pointer;
+        }
+    }
+
+    .botaoCadastrarInsert {
+        display: flex;
+        flex-direction: row;
+
+        p {
+            padding: 10px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+        }
+
+        .link {
+            color: #1400FF;
+            text-decoration: none;
+            padding-left: 3px;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+@media (max-width:1024px) {
+    .entrar {
+
+        .inputEntrar {
+            input {
+                padding: 1.5rem 2vw;
+            }
+        }
+    }
+}
+
+@media (max-width:930px) {
+    .entrar {
+
+        .inputEntrar {
+            input {
+                height: 4vh;
+                width: 50vw;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+
+@media (max-width:430px) {
+    .entrar {
+
+        a {
+            font-size: 0.5rem;
+        }
+
+        img {
+            height: 20vh;
+        }
+
+        .inputEntrar {
+
+            label {
+                font-size: 0.7rem;
+            }
+
+            input {
+                width: 70vw;
+                font-size: 1rem;
+            }
+        }
+    }
+}

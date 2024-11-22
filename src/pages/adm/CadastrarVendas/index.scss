@@ -1,0 +1,519 @@
+.CadastrarVendas {
+
+    .sessaoCompleta {
+        background-color: #FFEEE9;
+        padding: 5vh 5vw;
+        height: 100vh;
+
+        .sessaoQuadrado {
+            height: 100%;
+            width: 100%;
+            border-radius: 12px;
+            background-color: #fff;
+            padding: 2vh 2vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5vh;
+
+            button {
+                border: none;
+                font-family: Krona One;
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: #fff;
+                padding: 1vh 3vw;
+                background-color: #F0C1B3;
+                border-radius: 15px;
+            }
+
+            button:hover {
+                transition: 0.2s;
+                transform: scale(1.05);
+                cursor: pointer;
+                box-shadow: 0 6px 15px rgba(126, 126, 126, 0.527);
+            }
+
+
+            .conversao {
+                display: flex;
+                flex-direction: row;
+                gap: 5vh;
+
+                .alinhamento {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1vh;
+
+
+                    select {
+                        font-family: Krona One;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        color: #fff;
+                        padding: 1vh 1vw;
+                        background-color: #F0C1B3;
+                        border-radius: 15px;
+
+                        option {
+                            font-size: 1rem;
+                            padding: 1vh 1vw;
+                            background-color: #F0C1B3;
+                        }
+                    }
+
+                    p {
+                        align-self: self-start;
+                        font-weight: 600;
+                    }
+
+                    input {
+                        outline: none;
+                        border: solid 1px #ffffff;
+                        border-radius: 15px;
+                        font-family: Krona One;
+                        font-size: 0.8rem;
+                        font-weight: 500;
+                        color: #000000;
+                        padding: 1vh 1vw;
+                        background-color: #FFEEE9;
+                        width: 100%;
+                    }
+
+                    input:focus {
+                        transition: all 0.5s;
+                        border: solid 1px #949494;
+                    }
+                }
+            }
+        }
+    }
+
+    #invertido {
+        background-color: #FFEEE9;
+    }
+
+    .sessaoTabela {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5vh;
+        height: 120vh;
+        padding: 4vh 0vw;
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        .tabelaScroll {
+            height: 100vh;
+            max-width: 80vw;
+            max-height: 80vh;
+            overflow: hidden;
+            overflow-y: scroll;
+            border: solid 1px #000;
+            background-color: #F0C1B3;
+
+            table {
+                height: 10vh;
+                font-family: Poppins;
+                background-color: #F0C1B3;
+                font-size: 1rem;
+                padding: 2vh 2vw;
+                width: 80vw;
+
+                th {
+                    text-align: left;
+                    padding: 5px;
+                    border: 1px solid #000;
+                }
+
+                td {
+                    padding: 5px;
+                    border: 1px solid #000;
+                }
+            }
+        }
+
+        .tabelaScroll::-webkit-scrollbar {
+            width: 10px;
+            background-color: #cbcbcb;
+        }
+
+        .tabelaScroll::-webkit-scrollbar-thumb {
+            border: solid 1px #000;
+            border-right-style: none;
+            background-color: #F0C1B3;
+        }
+
+        button {
+            border: none;
+            font-family: Krona One;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #fff;
+            padding: 1vh 3vw;
+            background-color: #F0C1B3;
+            border-radius: 15px;
+        }
+
+        button:hover {
+            transition: 0.2s;
+            transform: scale(1.05);
+            cursor: pointer;
+            box-shadow: 0 6px 15px rgba(126, 126, 126, 0.527);
+        }
+
+        .alinharBotoes {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 5vw;
+
+            .textoInput {
+
+                p {
+                    font-weight: 500;
+                }
+                
+                input {
+                    outline: none;
+                    border: solid 1px #575757;
+                    border-radius: 15px;
+                    font-family: Krona One;
+                    font-size: 0.8rem;
+                    font-weight: 500;
+                    color: #000000;
+                    padding: 1vh 1vw;
+                    background-color: #FFEEE9;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    .CadastrarVendas {
+
+        .sessaoCompleta {
+
+            .sessaoQuadrado {
+                .conversao {
+
+                    .alinhamento {
+
+                        h1 {
+                            font-size: 1rem;
+                        }
+
+                        p {
+                            font-size: 0.8rem;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .sessaoTabela {
+            h2 {
+                font-size: 2rem;
+            }
+
+            .tabelaScroll {
+
+                table {
+
+                    th {
+                        font-size: 1rem;
+                    }
+
+                    td {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .inputsCheck {
+
+                select {
+                    font-size: 1rem;
+                }
+
+                option {
+                    font-size: 0.8rem;
+                }
+
+                button {
+                    font-size: 1rem;
+                }
+
+            }
+
+        }
+    }
+}
+
+@media (max-width:912px) {
+    .CadastrarVendas {
+
+        .sessaoCompleta {
+            height: 85vh;
+
+            .sessaoQuadrado {
+                height: 75vh;
+
+                .conversao {
+
+                    .alinhamento {
+
+                        h1 {
+                            font-size: 1rem;
+                        }
+
+                        p {
+                            font-size: 0.8rem;
+                        }
+
+                    }
+                }
+
+                button {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .sessaoTabela {
+            height: 80vh;
+
+
+            .tabelaScroll {
+                height: 70vh;
+                overflow-x: scroll;
+            }
+
+            .informacao {
+                height: 1vh;
+                padding: 5vh;
+            }
+        }
+    }
+}
+
+@media (max-width:540px) {
+    .CadastrarVendas {
+
+        .sessaoCompleta {
+
+            .sessaoQuadrado {
+
+                .conversao {
+                    gap: 3vw;
+
+                    .alinhamento {
+
+                        h1 {
+                            font-size: 0.8rem;
+                        }
+
+                        p {
+                            font-size: 0.7rem;
+                        }
+
+                        select {
+                            font-size: 0.5rem;
+                        }
+
+                        input {
+                            font-size: 0.4rem;
+                        }
+                    }
+                }
+
+                button {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+
+        .sessaoTabela {
+
+            .informacao {
+
+                h2 {
+                    font-size: 1.2rem;
+                }
+            }
+
+            .alinharBotoes {
+
+                button {
+                    font-size: 1rem;
+                }
+
+                .textoInput {
+            
+                    p {
+                        font-size: 0.8rem;
+                    }
+                    
+                    input {
+                        font-size: 0.6rem;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:475px) {
+    .CadastrarVendas {
+
+        .sessaoCompleta {
+            height: 65vh;
+
+            .sessaoQuadrado {
+                height: 55vh;
+
+                .conversao {
+                    gap: 3vw;
+
+
+                    .alinhamento {
+                        gap: 0.7vh;
+
+                        h1 {
+                            font-size: 0.6rem;
+                        }
+
+                        p {
+                            font-size: 0.7rem;
+                        }
+
+                        select {
+                            font-size: 0.5rem;
+                        }
+
+                        input {
+                            font-size: 0.4rem;
+                        }
+                    }
+                }
+
+                button {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+
+        .sessaoTabela {
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .inputsCheck {
+
+                select {
+                    font-size: 0.6rem;
+                }
+
+                option {
+                    font-size: 0.6rem;
+                }
+
+                button {
+                    font-size: 0.6rem;
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width:390px) {
+    .CadastrarVendas {
+
+        .sessaoCompleta {
+            height: 65vh;
+
+            .sessaoQuadrado {
+                height: 55vh;
+
+                .conversao {
+                    gap: 3vw;
+
+
+                    .alinhamento {
+                        gap: 0.5vh;
+
+                        h1 {
+                            font-size: 0.6rem;
+                        }
+
+                        p {
+                            font-size: 0.7rem;
+                        }
+
+                        select {
+                            font-size: 0.4rem;
+                        }
+
+                        input {
+                            font-size: 0.4rem;
+                        }
+
+                    }
+                }
+
+                button {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+
+        .sessaoTabela {
+
+            .tabelaScroll {
+
+                table {
+
+                    th {
+                        font-size: 0.8rem;
+                    }
+
+                    td {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+
+            .alinharBotoes {
+
+                button {
+                    font-size: 0.6rem;
+                }
+
+                .textoInput {
+            
+                    p {
+                        font-size: 0.6rem;
+                    }
+                    
+                    input {
+                        font-size: 0.5rem;
+                    }
+                    
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,215 @@
+.CatalogoFaixasDeBebe {
+
+    .sessaoInicialCatalogo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5vh;
+        padding: 5vh 5vw;
+        height: 50vh;
+        background-image: url('../../../../public/assets/images/imagemSessaoInicialCatalogo.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        h2 {
+            color: #fff;
+            font-size: 2rem;
+        }
+
+        a {
+            font-family: Krona One;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #fff;
+            padding: 2vh 3vw;
+            background-color: #F0C1B3;
+            border-radius: 12px;
+        }
+
+        a:hover {
+            transition: 0.2s;
+            transform: scale(1.05);
+            cursor: pointer;
+            box-shadow: 0 6px 15px rgba(126, 126, 126, 0.527);
+        }
+    }
+
+    .sessaoCardsPaginas {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10vw;
+        padding: 10vh 0vw;
+
+        .cardsPaginas {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            gap: 1vh;
+            height: 225px;
+            width: 225px;
+            border-radius: 12px;
+
+            h4 {
+                color: #fff;
+                font-size: 2em;
+            }
+
+            a {
+                font-family: Krona One;
+                font-size: 1rem;
+                font-weight: 500;
+                color: #fff;
+                padding: 1vh 2vw;
+                background-color: #F0C1B3;
+                border-radius: 12px;
+            }
+
+            a:hover {
+                transition: 0.2s;
+                transform: scale(1.05);
+                cursor: pointer;
+                box-shadow: 0 6px 15px rgba(126, 126, 126, 0.527);
+            }
+        }
+
+        #um {
+            background-image: url('../../../../public/assets/images/cardLacosDecorados.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #dois {
+            background-image: url('../../../../public/assets/images/cardLacosEstampados.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #tres {
+            background-image: url('../../../../public/assets/images/kitsDeLacos.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .tituloDaPagina {
+        margin-left: 5vh;
+    }
+}
+
+@media (max-width:1024px) {
+    .CatalogoFaixasDeBebe {
+
+        .sessaoCardsPaginas {
+
+            .cardsPaginas {
+
+                h4 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:912px) {
+    .CatalogoFaixasDeBebe {
+
+        .sessaoCardsPaginas {
+
+            .cardsPaginas {
+                height: 200px;
+                width: 200px;
+            }
+        }
+    }
+}
+
+@media (max-width:540px) {
+    .CatalogoFaixasDeBebe {
+
+        .sessaoInicialCatalogo {
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            a {
+                font-size: 1.2rem;
+            }
+        }
+
+        .sessaoCardsPaginas {
+
+            .cardsPaginas {
+                height: 125px;
+                width: 125px;
+
+                h4 {
+                    font-size: 1rem;
+                }
+
+                a {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .tituloDaPagina {
+            margin-left: 5vh;
+
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+    }
+}
+
+@media (max-width:430px) {
+    .CatalogoFaixasDeBebe {
+
+        .sessaoInicialCatalogo {
+            height: 30vh;
+
+            h2 {
+                font-size: 1rem;
+            }
+
+            a {
+                font-size: 1rem;
+            }
+
+
+        }
+
+        .sessaoCardsPaginas {
+            padding: 6vh 0vw;
+            gap: 5vw;
+
+            .cardsPaginas {
+                height: 90px;
+                width: 90px;
+
+                h4 {
+                    font-size: 0.8rem;
+                }
+
+                a {
+                    padding: 0.5vh 2vw;
+                    font-size: 0.7rem;
+                }
+            }
+        }
+
+        .tituloDaPagina {
+            margin-left: 2vh;
+
+            h1 {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

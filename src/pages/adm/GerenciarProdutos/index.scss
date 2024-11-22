@@ -1,0 +1,311 @@
+.GerenciarProdutos {
+
+    .sessaoCompleta {
+        background-color: #FFEEE9;
+        padding: 5vh 5vw;
+        height: 100vh;
+
+        .sessaoQuadrado {
+            height: 100%;
+            width: 100%;
+            border-radius: 12px;
+            background-color: #fff;
+            padding: 2vh 2vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5vh;
+
+            button {
+                border: none;
+                font-family: Krona One;
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: #fff;
+                padding: 1vh 3vw;
+                background-color: #F0C1B3;
+                border-radius: 15px;
+            }
+
+            button:hover {
+                transition: 0.2s;
+                transform: scale(1.05);
+                cursor: pointer;
+                box-shadow: 0 6px 15px rgba(126, 126, 126, 0.527);
+            }
+
+
+            .conversao {
+                display: flex;
+                flex-direction: row;
+                gap: 5vh;
+
+                .alinhamento {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1vh;
+
+
+                    select {
+                        font-family: Krona One;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        color: #fff;
+                        padding: 1vh 1vw;
+                        background-color: #F0C1B3;
+                        border-radius: 15px;
+
+                        option {
+                            font-size: 1rem;
+                            padding: 1vh 1vw;
+                            background-color: #F0C1B3;
+                        }
+                    }
+
+                    p {
+                        align-self: self-start;
+                        font-weight: 600;
+                    }
+
+                    input {
+                        outline: none;
+                        border: solid 1px #ffffff;
+                        border-radius: 15px;
+                        font-family: Krona One;
+                        font-size: 0.8rem;
+                        font-weight: 500;
+                        color: #000000;
+                        padding: 1vh 1vw;
+                        background-color: #FFEEE9;
+                        width: 100%;
+                    }
+
+                    input:focus {
+                        transition: all 0.5s;
+                        border: solid 1px #949494;
+                    }
+
+                    textarea {
+                        outline: none;
+                        border: solid 1px #ffffff;
+                        border-radius: 15px;
+                        font-family: Krona One;
+                        font-size: 0.8rem;
+                        font-weight: 500;
+                        color: #000000;
+                        padding: 0.7vh 1vw;
+                        background-color: #FFEEE9;
+                        width: 100%;
+                    }
+                    
+                    textarea:focus {
+                        transition: all 0.5s;
+                        border: solid 1px #949494;
+                    }
+                }
+            }
+
+            .alinharBotoes {
+                display: flex;
+                gap: 5vw;
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    .GerenciarProdutos {
+
+        .sessaoCompleta {
+
+            .sessaoQuadrado {
+                .conversao {
+
+                    .alinhamento {
+
+                        h1 {
+                            font-size: 1rem;
+                        }
+
+                        p {
+                            font-size: 0.8rem;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:912px) {
+    .GerenciarProdutos {
+
+        .sessaoCompleta {
+            height: 85vh;
+
+            .sessaoQuadrado {
+                height: 75vh;
+
+                .conversao {
+
+                    .alinhamento {
+
+                        h1 {
+                            font-size: 1rem;
+                        }
+
+                        p {
+                            font-size: 0.8rem;
+                        }
+
+                    }
+                }
+
+                button {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:540px) {
+    .GerenciarProdutos {
+
+        .sessaoCompleta {
+
+            .sessaoQuadrado {
+
+                .conversao {
+                    gap: 3vw;
+
+                    .alinhamento {
+
+                        h1 {
+                            font-size: 0.8rem;
+                        }
+
+                        p {
+                            font-size: 0.7rem;
+                        }
+
+                        select {
+                            font-size: 0.5rem;
+                        }
+
+                        input {
+                            font-size: 0.4rem;
+                        }
+
+                        textarea {
+                            font-size: 0.4rem;
+                        }
+
+                    }
+                }
+
+                button {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:475px) {
+    .GerenciarProdutos {
+
+        .sessaoCompleta {
+            height: 65vh;
+
+            .sessaoQuadrado {
+                height: 55vh;
+
+                .conversao {
+                    gap: 3vw;
+
+
+                    .alinhamento {
+                        gap: 0.7vh;
+
+                        h1 {
+                            font-size: 0.6rem;
+                        }
+
+                        p {
+                            font-size: 0.7rem;
+                        }
+
+                        select {
+                            font-size: 0.5rem;
+                        }
+
+                        input {
+                            font-size: 0.4rem;
+                        }
+
+                        textarea {
+                            font-size: 0.4rem;
+                        }
+
+                    }
+                }
+
+                button {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:390px) {
+    .GerenciarProdutos {
+
+        .sessaoCompleta {
+            height: 65vh;
+
+            .sessaoQuadrado {
+                height: 55vh;
+
+                .conversao {
+                    gap: 3vw;
+
+
+                    .alinhamento {
+                        gap: 0.5vh;
+
+                        h1 {
+                            font-size: 0.6rem;
+                        }
+
+                        p {
+                            font-size: 0.7rem;
+                        }
+
+                        select {
+                            font-size: 0.4rem;
+                        }
+
+                        input {
+                            font-size: 0.4rem;
+                        }
+
+                        textarea {
+                            font-size: 0.4rem;
+                        }
+
+                    }
+                }
+
+                button {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+}

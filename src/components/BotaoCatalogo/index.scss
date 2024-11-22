@@ -1,0 +1,76 @@
+.BotaoCatalogo {
+    position: relative;
+    z-index: 5;
+
+    .botao {
+        display: flex;
+        position: fixed;
+        bottom: 5vh;
+        right: 5vw;
+        border-radius: 100%;
+        height: 100px;
+        width: 100px;
+        background-image: linear-gradient(#C1796D, #a19491);
+        padding: 1vh 1vw;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+
+        p {
+            display: none;
+            color: #FFF;
+            font-size: 0.8rem;
+        }
+
+        img {
+            height: 5vh;
+        }
+    }
+
+    .botao:hover {
+        padding: 0vh 5vw;
+        transition: all 0.5s;
+        border-radius: 5px;
+        gap: 5px;
+
+        p {
+            display: flex;
+        }
+    }
+}
+
+@media (max-width:850px) {
+    .BotaoCatalogo {
+
+        .botao {
+
+            img {
+                height: 3vh;
+            }
+
+            p {
+                font-size: 0.7rem;
+            }
+
+        }
+    }
+}
+
+@media (max-width:540px) {
+    .BotaoCatalogo {
+
+        .botao {
+            height: 75px;
+            width: 75px;
+
+            img {
+                height: 3vh;
+            }
+
+            p {
+                font-size: 0.5rem;
+            }
+
+        }
+    }
+}

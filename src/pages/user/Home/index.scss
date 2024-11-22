@@ -1,0 +1,391 @@
+.Home {
+
+    .botao {
+        text-decoration: none;
+    }
+
+    .sessaoInicialCarrossel {
+        height: 100vh;
+        background-image: linear-gradient(214deg, #a54f84, #fff);
+    }
+
+    .sessaoDescubra {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10vh 0vw;
+        padding-bottom: 0;
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10vh;
+        }
+
+        .colecoesDisplay {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            width: 100%;
+            padding: 10vh 0vw;
+
+            .alinharPropiedades {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1vh;
+
+                img {
+                    height: 12.5vh;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    color: #5A5A5A;
+                }
+
+                a {
+                    font-family: Krona One;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    color: #fff;
+                    padding: 1vh 3vw;
+                    background-color: #F0C1B3;
+                    border-radius: 10px;
+                }
+
+                a:hover {
+                    transition: 0.2s;
+                    transform: scale(1.05);
+                    cursor: pointer;
+                    box-shadow: 0 6px 15px rgba(126, 126, 126, 0.527);
+                }
+            }
+        }
+
+        #secaoCorAlterada {
+            background-color: #FFEEE9;
+            flex-direction: row-reverse;
+
+        }
+    }
+
+    .sessaoEncomendas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+        gap: 5vh;
+        background-image: url('../../../../public/assets/images/imgSessãoEncomendas.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        p {
+            color: #fff;
+            font-size: 2.5rem;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        a {
+            font-family: Krona One;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #fff;
+            padding: 2vh 3vw;
+            background-color: #F0C1B3;
+            border-radius: 10px;
+        }
+
+        a:hover {
+            transition: 0.2s;
+            transform: scale(1.05);
+            cursor: pointer;
+            box-shadow: 0 6px 15px rgba(126, 126, 126, 0.527);
+        }
+    }
+
+    .sessoDeVoltaAoCatalogo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        height: 50vh;
+
+        .alinharComponentes {
+            display: flex;
+            flex-direction: column;
+            gap: 6vh;
+
+            p {
+                color: #5A5A5A;
+                font-size: 2rem;
+                font-weight: 600;
+                text-align: start;
+            }
+
+            a {
+                text-align: center;
+                font-family: Krona One;
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: #fff;
+                padding: 2vh 3vw;
+                background-color: #F0C1B3;
+                border-radius: 10px;
+            }
+
+            a:hover {
+                transition: 0.2s;
+                transform: scale(1.05);
+                cursor: pointer;
+                box-shadow: 0 6px 15px rgba(126, 126, 126, 0.527);
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .Home {
+
+        .sessaoDescubra {
+            padding: 5vh 0vw;
+            padding-bottom: 0;
+
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        .sessaoEncomendas {
+
+            p {
+                font-size: 1.5rem;
+            }
+
+            a {
+                font-size: 1rem;
+            }
+        }
+
+        .sessoDeVoltaAoCatalogo {
+
+            .alinharComponentes {
+
+                p {
+                    font-size: 1.5rem;
+                }
+
+                a {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 912px) {
+    .Home {
+
+        .sessaoInicialCarrossel {
+            height: 50vh;
+        }
+
+        .sessaoDescubra {
+
+            .colecoesDisplay {
+                height: 20vh;
+
+                .alinharPropiedades {
+
+                    img {
+                        height: 8vh;
+                    }
+
+                    a {
+                        width: 20vw;
+                    }
+                }
+            }
+        }
+
+        .sessaoEncomendas {
+            height: 35vh;
+            gap: 2vh;
+        }
+
+        .sessoDeVoltaAoCatalogo {
+            height: 35vh;
+
+            .alinharComponentes {
+                gap: 2vh;
+
+                a {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .Home {
+        .sessaoDescubra {
+
+            h1 {
+                font-size: 0.9rem;
+            }
+
+            .colecoesDisplay {
+
+                .alinharPropiedades {
+
+                    p {
+                        font-size: 0.9rem;
+                    }
+
+                    a {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+
+        .sessaoEncomendas {
+            gap: 3vh;
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            a {
+                font-size: 0.9rem;
+            }
+        }
+
+        .sessoDeVoltaAoCatalogo {
+
+            img {
+                height: 25vh;
+            }
+
+            .alinharComponentes {
+
+                p {
+                    font-size: 0.9rem;
+                }
+
+                a {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 430px) {
+    .Home {
+
+        .sessaoDescubra {
+
+
+            .colecoesDisplay {
+
+                .alinharPropiedades {
+
+                    p {
+                        font-size: 0.7rem;
+                    }
+
+                    a {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+
+        .sessaoEncomendas {
+            height: 30vh;
+
+            p {
+                font-size: 1rem;
+            }
+
+            a {
+                font-size: 0.8rem;
+                padding: 1.2vh 3vw;
+            }
+        }
+
+        .sessoDeVoltaAoCatalogo {
+            height: 30vh;
+
+            img {
+                height: 15vh;
+            }
+
+            .alinharComponentes {
+
+                p {
+                    font-size: 0.8rem;
+                }
+
+                a {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 390px) {
+    .Home {
+
+        .sessaoDescubra {
+
+
+            .colecoesDisplay {
+
+                .alinharPropiedades {
+
+                    p {
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+        }
+
+        .sessaoEncomendas {
+
+            p {
+                font-size: 0.7rem;
+            }
+        }
+
+        .sessoDeVoltaAoCatalogo {
+            height: 30vh;
+
+            img {
+                height: 15vh;
+            }
+
+            .alinharComponentes {
+
+                p {
+                    font-size: 0.6rem;
+                }
+
+                a {
+                    padding: 1.2vh;
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+}
